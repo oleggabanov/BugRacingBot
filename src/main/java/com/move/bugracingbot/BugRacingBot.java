@@ -26,14 +26,14 @@ public class BugRacingBot extends TelegramLongPollingBot {
 
   private EditMessageText newTxt;
   private EditMessageReplyMarkup newKb;
-  public static final Long myOwnId = 939008629L;
+  public static final Long myOwnId = someId;
   private String userName;
   public static final String HELP = """
           Если вы решили оплатить курсы через BugRacingBot, то вам необходимо выполнить следующие действия:
           1)Выбрать интересующий вас пак
           2)Перейти в меню оплаты, скопировать адрес кошелька или карты
           3)Перевести указанную сумму и подтвердить действие
-          с помощью кнопки \"Проверить перевод\", после чего наши модераторы проверят перевод и вы получите ссылку на яндекс диск с 500гб различных курсов по Java
+          с помощью кнопки \"Проверить перевод\", после чего наши модераторы проверят перевод и вы получите обучение.
                     
           Напишите мне если остались вопросы, с радостью вам помогу @""";
   private static final String GREETING_MESSAGE = """
@@ -64,12 +64,6 @@ public class BugRacingBot extends TelegramLongPollingBot {
           Сервис для продажи обучающих материалов по программированию.
           Выберите товар который вас интересует""";
   private static final String SECOND_MENU = """
-          Полный пак курсов по Java включает в себя: 
-          1)Alishev
-          2)DMDEV
-          3)Zaur Tregulov
-          4)SWBAND 
-          5)Многое другое
           После оплаты вам придет ссылка на яндекс диск.
           Если возникли вопросы - /help          
           """;
